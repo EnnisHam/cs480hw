@@ -15,7 +15,14 @@ private:
     F* _array;
 };
 
-Foo()
+Foo::Foo()
     : _data(F())
     , _array(nullptr)
 {};
+
+Foo::Foo(Foo &&rval)
+    : _data(rval._data)
+    , _array(rval._array)
+{
+    rval._array = nullptr;
+}
