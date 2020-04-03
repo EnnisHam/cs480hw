@@ -5,7 +5,7 @@
 #####						  #####
 
 ### Compiler variables
-CXX = g++
+CXX = clang++
 CXXFLAGS = -Wall
 EXE = hw01
 
