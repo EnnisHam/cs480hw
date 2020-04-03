@@ -1,10 +1,11 @@
+template <typename T>
 class Foo {
 public:
     Foo();
-    int data() { return _data; };
+    T data() { return _data; };
     void mut_data(int data) { _data = data; };
 private:
-    int _data;
+    T _data;
 };
 
-Foo(): _data(0) {};
+Foo(): _data(T()) {};
