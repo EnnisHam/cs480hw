@@ -7,4 +7,4 @@ private:
     int _data;
 };
 
-
+Foo(): _data(0) {};
