@@ -2,6 +2,7 @@ template <typename F>
 class Foo {
 public:
     Foo();
+    Foo(Foo &&rval);
     F data() { return _data; };
     void mut_data(F data) { _data = data; };
 
